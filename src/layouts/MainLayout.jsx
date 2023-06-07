@@ -1,15 +1,19 @@
 import React from "react";
+import { useTheme, useMediaQuery, Box, Typography } from "@mui/material";
 import PhaseCardList from "../components/phaseCard/PhaseCardList";
-import { Box, Typography } from "@mui/material";
+import backgroundIllustration from "../assets/background-illustration.png";
 import "@fontsource/black-han-sans";
 import "@fontsource/yellowtail";
-import backgroundIllustration from "../assets/background-illustration.png";
 
 const MainLayout = () => {
+	const theme = useTheme();
+	const isSm = useMediaQuery(theme.breakpoints.down("sm"));
+	const isLg = useMediaQuery(theme.breakpoints.down("lg"));
+
 	return (
 		<Box
-			height="200vw"
-			minHeight="200vh"
+			height={"200vw"}
+			minHeight={isSm ? "300vh" : "200vh"}
 			sx={{
 				backgroundImage: `url(${backgroundIllustration})`,
 				backgroundRepeat: "no-repeat",
@@ -19,21 +23,25 @@ const MainLayout = () => {
 			<Box
 				sx={{
 					position: "sticky",
-					top: "100px",
+					top: isSm ? "10px" : "20px",
 					overflow: "hidden",
 				}}>
-				<Box mt={10}>
+				<Box>
 					<Typography
 						variant="h1"
 						textAlign="center"
 						color="#859A50"
 						fontFamily="Yellowtail"
-						fontSize="140px"
+						fontSize={isSm ? "80px" : isLg ? "100px" : "140px"}
 						position="relative"
 						zIndex={-1}
 						sx={{
 							opacity: 0.2,
-							transform: "translateY(70px)",
+							transform: isSm
+								? "translateY(50px)"
+								: isLg
+								? "translateY(60px)"
+								: "translateY(70px)",
 						}}>
 						Roadmap
 					</Typography>
@@ -42,13 +50,13 @@ const MainLayout = () => {
 						textAlign="center"
 						color="#1C303A"
 						fontFamily="Black Han Sans"
-						fontSize="64px"
+						fontSize={isSm ? "40px" : isLg ? "48px" : "64px"}
 						position="relative"
 						zIndex={1}>
 						Roadmap
 					</Typography>
 				</Box>
-				<PhaseCardList />
+				<PhaseCardList isSm={isSm} isLg={isLg} />
 			</Box>
 		</Box>
 	);
