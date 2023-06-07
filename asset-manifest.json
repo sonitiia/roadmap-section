@@ -1,9 +1,11 @@
 {
   "files": {
     "main.css": "/roadmap-section/static/css/main.efd0b091.css",
-    "main.js": "/roadmap-section/static/js/main.c0673f5c.js",
+    "main.js": "/roadmap-section/static/js/main.1da78e39.js",
     "static/media/background-illustration.png": "/roadmap-section/static/media/background-illustration.ff6a7622889a8c2ee082.png",
     "static/media/bamboo-frame.png": "/roadmap-section/static/media/bamboo-frame.0d8a91deb1a59a12dad4.png",
+    "static/media/bamboo-frame-md.png": "/roadmap-section/static/media/bamboo-frame-md.9715875db488813bbfef.png",
+    "static/media/bamboo-frame-sm.png": "/roadmap-section/static/media/bamboo-frame-sm.6d8992d1924c1cbce1c3.png",
     "static/media/inter-latin-ext-500-normal.woff": "/roadmap-section/static/media/inter-latin-ext-500-normal.084aa2381d74c9c49610.woff",
     "static/media/inter-latin-500-normal.woff": "/roadmap-section/static/media/inter-latin-500-normal.d6b36fd8bebd5ec8d693.woff",
     "static/media/yellowtail-latin-400-normal.woff": "/roadmap-section/static/media/yellowtail-latin-400-normal.688a01257135e1ec887a.woff",
@@ -200,10 +202,10 @@
     "static/media/black-han-sans-99-400-normal.woff": "/roadmap-section/static/media/black-han-sans-99-400-normal.bf36cb7743a047afb213.woff",
     "index.html": "/roadmap-section/index.html",
     "main.efd0b091.css.map": "/roadmap-section/static/css/main.efd0b091.css.map",
-    "main.c0673f5c.js.map": "/roadmap-section/static/js/main.c0673f5c.js.map"
+    "main.1da78e39.js.map": "/roadmap-section/static/js/main.1da78e39.js.map"
   },
   "entrypoints": [
     "static/css/main.efd0b091.css",
-    "static/js/main.c0673f5c.js"
+    "static/js/main.1da78e39.js"
   ]
 }
